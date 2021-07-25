@@ -1,0 +1,14 @@
+
+
+pasos del carrito:
+
+1)Al crearse un usuario -> se crea un carrito de la tabla Cart con el estado "inProgress" asociado a ese user ID
+2) Luego cada vez que se agrega o elimina un producto al carrito se tiene que sincronizar con la BD mediante axios a la rutas para agregar o remover un producto
+agrego un producto: si el producto no eixste en el carrito, lo agrego al carrito con cantidad 1 y si el producto existe le sumo la cantidad q tiene + 1
+3) Al finalizar la compra se debe cambiar el estado del carrito actual a completed y crear un nuevo carrito con el estado "inProgress" o sino eliminar el carrito
+
+pasos de la orden:
+1) cuando un carrito se confirma, genero una orden con la info del carrito (cambio el estado del carrito actual a completed y creo uno nuevo con el estaod "inProgress"?) + info de direccion/envio/etc
+
+Productos:
+Mismo nombre de un producto con diferentes campos se considera el mismo producto en la agrupacion de vistas
